@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+  :root {
+      --drac-bg: #282a36;
+      --drac-current: #44475a;
+      --drac-fg: #f8f8f2;
+      --drac-fg2: #f8f8f2ae;
+      --drac-pink: #ff79c6;
+      --drac-purple: #bd93f9;
+      --drac-cyan: #8be9fd;
+
+      /* footer */
+      --drac-background: #282a36;
+      --drac-comment: #6272a4;
+    }
+
+    .font{
+         font-family: "Roboto Mono", monospace;
+    }

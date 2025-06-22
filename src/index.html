@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+<style>
+  
+  </style>
+</head>
+<body class="bg-[var(--drac-bg)]   text-[var(--drac-fg)] font">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between md:justify-evenly p-4 shadow-md bg-[var(--drac-current)] relative z-30">
+    <!-- Logo -->
+    <div class="text-lg font-bold text-[var(--drac-cyan)]">&lt;Van/&gt;</div>
+
+    <!-- Hamburger Button -->
+    <button id="menuBtn" class="md:hidden z-40">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[var(--drac-fg)]" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Nav Menu -->
+    <nav id="navMenu" class="fixed top-0 left-0 h-full w-1/2 bg-[var(--drac-bg)] text-[var(--drac-fg)] shadow-lg transform -translate-x-full transition-transform duration-300 md:static md:translate-x-0 md:flex md:items-center md:w-auto md:shadow-none md:bg-transparent z-30">
+      
+      <!-- Close Button (Mobile Only) -->
+      <div class="flex justify-end p-4 md:hidden">
+        <button id="closeBtn" class="text-[var(--drac-fg)] text-2xl font-bold">&times;</button>
+      </div>
+
+      <!-- Nav Items -->
+      <ul class="flex flex-col space-y-6 mt-6 p-6 md:mt-0 md:p-0 md:flex-row md:space-y-0 md:space-x-8">
+        <li>
+          <a href="#skills" class="hover:text-[var(--drac-purple)] transition-colors duration-200">Skills</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-[var(--drac-purple)] transition-colors duration-200">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-[var(--drac-cyan)] transition-colors duration-200">Projects</a>
+        </li>
+         <li>
+          <a href="#contact" class="hover:text-[var(--drac-cyan)] transition-colors duration-200">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+   <Section class="md:mx-auto md:w-8/12">
+    
+        <div class="flex flex-col items-center">
+            <div class="mt-15">
+                <img src="./img/image1.png" class=" w-[200px] md:w-[200px]" alt=""> 
+            </div>
+
+            <div class="px-10 lg:px-4">
+                <h1 class="text-lg hover:text-[var(--drac-cyan)] duration-500">Hello! I'm <span class="font-bold text-4xl text-[var(--drac-purple)]">Kristofer Van</span> </h1>
+                <p class="hover:text-[var(--drac-cyan)] duration-500" >a <span class="font-bold text-lg ">Full-Stack</span class="hover:text-[var(--drac-cyan)] duration-500"> web developer with a strong passion for building clean, efficient, and meaningful digital experiences. With a solid foundation in Computer Science.</p>
+
+                <button class="px-4 py-2 bg-[var(--drac-cyan)]/76 rounded-md hover:bg-[var(--drac-purple)]/80 mt-2 duration-500">Contact me</button>
+            </div>
+
+            
+        </div>
+   </Section>
+
+   <Section id="skills">
+    <!-- project.html -->
+  <iframe src="skills.html" width="100%" height="600" style="border:none;"></iframe>
+
+   </Section>
+
+   <Section id="projects">
+        <div class=" md:mx-auto md:w-8/12 mt-20">
+            <h1 class="mb-6 text-center text-xl relative pointer-cursor hover:text-[var(--drac-purple)] duration-500 "> Projects 
+                    <!-- <span class="border-b w-[80px] absolute top-8 left-116 border-[var(--drac-cyan)] "></span> -->
+            </h1>
+        
+            <!-- Items -->
+            <div class="w-full flex px-2 justify-evenly flex-wrap"> 
+                <div class="card w-[70%] md:w-[30%] shadow-lg shadow-[var(--drac-purple)] p-4 space-y-3 mt-2 flex flex-col justify-between hover:scale-105 duration-500" 
+                    style="box-shadow: 0 10px 15px -3px var(--drac-purple);">
+
+                    <div class="space-y-2">
+                      <div class="card-header">
+                        <p class="font-bold text-center">Online Shop Website </p>
+                      </div>
+
+                    <div class="description text-sm text-[var(--drac-fg2)] ">
+                        <p>I create a online shop website using php,Ajax, Javascript and Mysql</p>
+                    </div>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="./img/image.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card w-[70%] md:w-[30%] shadow-lg shadow-[var(--drac-purple)]  p-4 space-y-3 mt-10 md:mt-2 flex flex-col justify-between hover:scale-105 duration-500" style="box-shadow: 0 10px 15px -3px var(--drac-purple);">
+                    <div class="space-y-2">
+                         <div class="card-header">
+                            <p class="font-bold text-center">Todolist Website </p>
+                          </div>
+                        <div class="description text-sm text-[var(--drac-fg2)] ">
+                            <p>Inspired by Laravel Inertia ReactJs</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img/todolist.png" alt="">
+                    </div>
+
+                </div>
+                
+                <div class="card w-[70%] md:w-[30%] shadow-lg shadow-[var(--drac-purple)]  p-4 space-y-3 mt-10 md:mt-2 hover:scale-105 duration-500 " style="box-shadow: 0 10px 15px -3px var(--drac-purple);">
+                    <div class="space-y-2">
+                      <div class="card-header">
+                        <p class="font-bold text-center">Online Shop Website </p>
+                      </div>
+                      <div class="description text-sm text-[var(--drac-fg2)] ">
+                        <p>I created my custom template for future projects.Inspired by Laravel ReactJs Inertia</p>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img/template.png" alt="">
+                    </div>
+                </div>  
+            </div>
+        </div>
+   </Section>
+
+   <Section id="about" class="md:mx-auto md:w-8/12 mt-30 p-5 md:flex ">
+      <div class="shadow-md relative"  
+      style="box-shadow: 0 10px 15px -3px var(--drac-cyan);">
+
+        <p class=" border h-[250px] right-[-20px] border-gray-500 border-3 hidden md:block absolute " ></p>
+        
+        <div class="hidden md:block">
+          <img src="./img/profile.jpg" alt="">
+        </div>
+      
+      </div >
+   
+      <div class="md:px-6 md:flex flex-col justify-between">
+          <div>
+            <h1 class="font-bold text-2xl text-center md:text-left">About me</h1>
+            <p class="text-center md:text-left text-gray-300">Hardship is not the end of the road. It's the shaping ground where strength, patience, and purpose are forged."</p>
+            <br>
+            <p class="text-center md:text-left text-gray-300">Graduated at Interworld Colleges Foundation Inc. with a bachelor's degree in computer science. I'm a full-stack web developer passionate about building user-friendly and functional websites. With a strong foundation in PHP,Html,Javascript,Tailwindcss,Bootstrap and Laravel. I focus on creating clean, efficient code and seamless user experiences. If you're looking for a dedicated developer—I'm ready to start now.</p>
+            
+            <div class=" md:hidden w-[50px] h-[50px] mt-5 flex float-center mx-auto">      
+              <img src="./img/profile.jpg" class="rounded-[50%]" alt="">
+            </div>
+          </div>
+
+          <!-- icons -->
+          <div class=" md:flex justify-end gap-5 items-center">
+              <a href="https://github.com/cawcowz">
+                <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle md:bg-white rounded-3xl w-[30px] hover:scale-105 duration-500 mt-2">
+                  <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z "></path>
+              </svg>  
+              </a>
+              <p class=" w-[25px] md:w-[30px] mt-2 hover:scale-105 duration-500">
+                <img src="./img/Facebook.png" alt="">
+              </p>
+              <p class=" w-[25px] md:w-[30px] mt-2 hover:scale-105 duration-500"><img src="./img/Instagram.png" alt=""></p>
+             
+          </div>
+      </div>
+   </Section>
+
+
+    <div class="mt-10 md:mt-30" id="contact">
+
+              <iframe src="contact.html" width="100%" height="600" style="border:none;"></iframe>
+    </div>
+
+
+
+  <script src="./js/header.js"></script>
+</body>
+</html>
